@@ -1,0 +1,23 @@
+CREATE DATABASE testimonials_db;
+
+USE testimonials_db;
+
+CREATE TABLE testimonials (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    message TEXT NOT NULL,
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE DATABASE projects_db;
+
+USE projects_db;
+
+CREATE TABLE projects (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    link VARCHAR(255),
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
